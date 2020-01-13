@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record model="ir.ui.view" id="mrp.mrp_production_workcenter_form_view_inherit">
+    <record model="ir.ui.view" id="mrp.mrp_production_workorder_form_view_inherit">
         <field name="name">mrp.production.work.order.form</field>
         <field name="model">mrp.workorder</field>
         <field name="arch" type="xml">
