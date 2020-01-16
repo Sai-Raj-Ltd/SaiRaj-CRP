@@ -27,7 +27,7 @@
 
     # always loaded
     'data': [
-        #'security/groups.xml',
+        'security/groups.xml',
         'security/rules.xml',
         'security/ir.model.access.csv',
         'views/overtime_view.xml',
