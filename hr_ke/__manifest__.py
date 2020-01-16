@@ -27,7 +27,7 @@
 
     # always loaded
     'data': [
-        'security/groups.xml',
+        #'security/groups.xml',
         'security/rules.xml',
         'security/ir.model.access.csv',
         'views/overtime_view.xml',
@@ -35,7 +35,7 @@
         'views/payroll_view.xml',
         'views/contract_view.xml',
         'views/hr_view.xml',
-        'views/res_config_view.xml',
+        #'views/res_config_view.xml',
         'data/overtime_data.xml',
         'data/salary_advance_data.xml',
         'data/categories_data.xml',
