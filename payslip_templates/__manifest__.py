@@ -27,7 +27,7 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'report/payslip.xml',
         'views/company_address.xml',
         'views/company_footer.xml',
@@ -42,7 +42,7 @@
         'views/report_template2.xml',
         'views/report_template3.xml',
         'views/report_template4.xml',
-        #'views/res_config_view.xml',
+        'views/res_config_view.xml',
         'views/switch_template.xml',
         'views/payslip_view.xml',
     ],
