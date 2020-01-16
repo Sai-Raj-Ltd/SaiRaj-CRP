@@ -16,7 +16,7 @@
                                     Default payslip report settings
                                 </div>
                                 <div class="mt16" id="payslip_settings">
-									<div style="width:100%;display:inline-block;">
+<!-- 									<div style="width:100%;display:inline-block;">
 										<label for="company_id" invisible="True"/>
 										<field name="company_id" class="oe_inline" invisible="True"/>
 									</div>
@@ -75,7 +75,7 @@
 									<div>
 										<label for="font_family"/>
 										<field name="font_family" class="oe_inline"/>
-									</div>
+									</div> -->
 									<div>
 										<i class="fa fa-info-circle" aria-hidden="true"><strong> NOTE:</strong></i>
 										<p style="margin-top:0px;">Please make sure the font family you are specifying is already installed in your Odoo Server.</p>
