@@ -37,14 +37,14 @@ class KEPayrollSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
     employer_nssf = fields.Char(
-        'Employer NSSF NO.',required = False,
+        'Employer NSSF NO.',
         related='company_id.employer_nssf',
         size=9)
     employer_nhif = fields.Char(
-        'Employer NHIF CODE.',required = False,
+        'Employer NHIF CODE.',
         related='company_id.employer_nhif',
         size=6)
     employer_kra = fields.Char(
-        'Employer KRA PIN.',required = False,
+        'Employer KRA PIN.',
         related='company_id.employer_kra',
         size=11)
