@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+       <record id="view_partner_form_extention" model="ir.ui.view">
+        <field name="name">view partner form extention</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="vendor_type" widget="radio" class="oe_edit_only" options="{'horizontal': true}"/>
+            </xpath>
+        </field>
+       </record>
+  </data>
+</odoo>
