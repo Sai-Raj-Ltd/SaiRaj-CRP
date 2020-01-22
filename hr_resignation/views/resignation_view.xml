@@ -11,8 +11,7 @@
                     <field name="department_id"/>
                     <field name="joined_date"/>
                     <field name="expected_revealing_date"/>
-                    <field name="approved_revealing_date"/>
-                    <field name="notice_period"/>
+                    <field name="state"/>
                 </tree>
             </field>
         </record>
