@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <data noupdate="0">
+    <!-- EXTEND SALES ORDER FORM VIEW -->
+    <!-- sale.order inherit form view -->
+    <record id="sale_view_order_form_inherit" model="ir.ui.view">
+      <field name="name">sale.order.inherit.view.form</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form" />
+      <field name="arch" type="xml">
+
+        <field name="partner_id" position="after">
+          <field name="po_number" />
+        </field>
+
+      </field>
+    </record>
+
+    <!-- EXTEND CUSTOMER ACCOUNT PAYMENT FORM -->
+    <!-- account.payment inherit form view -->
+    <record id="account_payment_form_inherit" model="ir.ui.view">
+      <field name="name">account.payment.inherit.view.form</field>
+      <field name="model">account.payment</field>
+      <field name="inherit_id" ref="account.view_account_payment_form" />
+      <field name="arch" type="xml">
+
+        <field name="journal_id" position="after">
+          <field name="online_payment_method" widget="radio" />
+          <field name="payment_reference" attrs="{ 'invisible':[('online_payment_method', 'not in', ['mpesa','visa_card'])] }" />
+        </field>
+
+        <!-- <field name="online_payment_method" position="after"> </field> -->
+
+      </field>
+    </record>
+
+    <!-- EXTEND VENDOR BILL ACCOUNT INVOICE FORM -->
+    <!-- account.invoice inherit form view -->
+    <record id="account_invoice_bill_form_inherit" model="ir.ui.view">
+      <field name="name">account.invoice.inherit.view.form</field>
+      <field name="model">account.invoice</field>
+      <field name="inherit_id" ref="account.invoice_supplier_form" />
+      <field name="arch" type="xml">
+
+        <field name="date_due" position="after">
+          <field name="online_payment_method" widget="radio" />
+          <field name="payment_reference" attrs="{ 'invisible':[('online_payment_method', 'not in', ['mpesa','visa_card','cash','cheque','master_card','rtgs'])] }" />
+        </field>
+
+        <!-- <field name="online_payment_method" position="after"> </field> -->
+
+      </field>
+    </record>
+
+  </data>
+</odoo>
